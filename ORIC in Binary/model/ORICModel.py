@@ -145,7 +145,7 @@ def objective(x,y_true, t_true, t_pred, y0_pred, y1_pred,z, alpha=1, beta=1):
 
 
 # calculate wasserstein distance
-def wasserstein(x,x_enc, t_pred,its=10,lamb=10, ite=10,  backpropT=False):
+def wasserstein(x,x_enc, t_pred,its=10,lamb=10, ite=10,  backpropT=True):
     # compute distance matrix
     epsilon = 1e-9
     device = x_enc.device
